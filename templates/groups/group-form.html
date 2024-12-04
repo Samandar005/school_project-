@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Group</title>
+</head>
+<body>
+  <h1>Add Group</h1>
+  <form method="post">
+    {% csrf_token %}
+    <label for="group_name">Group Name</label><br>
+    <input type="text" name="group_name" id="group_name"><br><br>
+
+    <label for="group_type">Group Type</label><br>
+    <input type="text" name="group_type" id="group_type"><br><br>
+
+
+    <input type="submit" value="Create Group"><br><br>
+  </form>
+    <button><a href="{% url 'groups:group_list' %}">Back to List</a></button><br><br>
+      <button><a href="{% url 'home' %}">HOME</a></button><br><br>
+
+</body>
+</html>
