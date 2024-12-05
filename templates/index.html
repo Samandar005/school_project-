@@ -6,9 +6,10 @@
 </head>
 <body>
   <h1>Home</h1>
-  <a href="{% url 'students:student_list' %}"><h3>Student List</h3></a>
-  <a href="{% url 'groups:group_list' %}"><h3>Group List</h3></a>
-  <a href="{% url 'teachers:teacher_list' %}">Teacher List</a>
-
+    <ol>
+        <li><a href="{% url 'students:student_list' %}"><h3>Student List</h3></a></li>
+        <li><a href="{% url 'groups:group_list' %}"><h3>Group List</h3></a></li>
+        <li><a href="{% url 'teachers:teacher_list' %}">Teacher List</a></li>
+    </ol>
 </body>
 </html>
